@@ -1,14 +1,20 @@
 ---
 
 server:
-    port: 8765
- 
-zuul:
-    prefix: /api
-    routes:
-        account:
-            path: /well/**
-            serviceId: well-service
-        customer:
-            path: /fields/**
-            serviceId: fields-service
+  port: 8765
+  
+zuul:  
+  routes:
+    well:
+      path: /well/**
+      serviceId: well-service
+      url: https://www.google.co.ve/
+    fields:
+      path: /fields/**
+      serviceId: fields-service
+      url: https://www.facebook.com/
+      
+      
+eureka:
+  client: 
+    enabled: false
