@@ -1,0 +1,7 @@
+
+{
+  "name": "Zuul Server",
+  "description": "Zuul Server demo kps.",
+  "website": "https://github.com/fpinedane/kps-gateway-heroku",
+  "success_url": "/index.html"
+}

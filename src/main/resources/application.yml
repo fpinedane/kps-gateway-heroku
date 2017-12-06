@@ -1,0 +1,14 @@
+---
+
+server:
+    port: 8765
+ 
+zuul:
+    prefix: /api
+    routes:
+        account:
+            path: /well/**
+            serviceId: well-service
+        customer:
+            path: /fields/**
+            serviceId: fields-service
